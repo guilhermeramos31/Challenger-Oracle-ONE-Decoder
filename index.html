@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <title>Decodificador Alura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/images/Vector-1.svg">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>   
+    <header>
+        <h1 id="logo"><img src="assets/images/Vector-1.svg" alt="logo Alura."></h1>
+    </header>
+    <div class="conteiner">
+        <section>
+            <div class="textCamp">
+                <textarea id="textArea" placeholder="Digite seu texto"></textarea>
+            </div>
+            <div class="notice">
+                <img src="assets/images/Vector.svg" alt="ponto de afirmação." id="exclamationMark">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div id="buttonArea">
+                <button type="button" class="inputButton" id="crypt"><span>Criptografar</span></button>
+                <button type="button" class="inputButton" id="decrypt"><span>Descriptografar</span></button>
+            </div>
+        </section>
+        <section>
+            <div class="resultCamp"><!--colocar na class depois resultCampAfter-->
+                <div>
+                    <img id="sticker" src="assets/images/High-quality-products-1-1.svg" alt="Uma pessoa segurando uma lupa de aumento e um diamante logo a sua frente.">
+                </div>
+                <div class="textCard">
+                    <div id="before">
+                        <p class="title">Nenhuma mensagem encontrada</p>
+                        <p class="text">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    </div>
+                    <div id="after">
+                        <textarea class="textAfter" id="textAreaTwo" readonly></textarea>
+                        <button type="button" class="inputButton" id="copy"><span>Copiar</span></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

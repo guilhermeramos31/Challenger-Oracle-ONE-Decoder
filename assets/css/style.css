@@ -1,0 +1,541 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Mobile */
+body {
+	position: relative;
+	width: 375px;
+	height: 975px;
+	background: #F3F5FC;
+}
+header {
+	position: absolute;
+	width: 375px;
+	height: 96px;
+	left: 0px;
+	top: 0px;
+}
+#logo {
+	width: 100px;
+	height: 100px;
+
+	position: absolute;
+	left: 4.27%;
+	right: 87.2%;
+	top: 25%;
+	bottom: 25%;
+}
+h1 > img {
+	padding-left: 13px;
+}
+#textArea {
+	position: absolute;
+	width: 343px;
+	height: 289px;
+	left: 16px;
+	top: 152px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+
+	color: #0A3871;
+
+	background: transparent;
+	border: none;
+	outline: none;
+
+	resize: none;
+}
+#textArea::placeholder {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+
+	color: #0A3871;
+}
+#textArea::-webkit-scrollbar {
+	width: 10px;
+}
+#textArea::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #c0ccfc; 
+	border-radius: 10px;
+}
+#textArea::-webkit-scrollbar-thumb {
+	background: rgb(47, 121, 200); 
+	border-radius: 10px;
+}
+#textArea::-webkit-scrollbar-thumb:hover {
+	background: #0A3871; 
+}
+#exclamationMark {
+	position: static;
+	width: 16px;
+	height: 16px;
+	left: 0px;
+	top: 1px;
+	margin: 0px 4px;
+}
+.notice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px;
+
+	position: absolute;
+	width: 252px;
+	height: 18px;
+	left: 16px;
+	top: 451px;
+}
+.notice > p {
+	position: static;
+	width: 228px;
+	height: 18px;
+	left: 24px;
+	top: 0px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+
+	color: #343A40;
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+	margin: 0px 4px;
+}
+#buttonArea {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	
+	position: absolute;
+	width: 343px;
+	height: 158px;
+	left: 16px;
+	top: 485px;	
+}
+button {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	padding: 24px;
+
+	position: static;
+	width: 332px;
+	height: 67px;
+	left: 0px;
+
+	border-radius: 24px;
+
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 10px 0px;
+
+	cursor: pointer;
+}
+button > span {
+	position: static;
+	width: 284px;
+	height: 19px;
+	left: 24px;
+	top: 24px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+
+	flex: none;
+	order: 0;
+	flex-grow: 1;
+}
+#crypt {
+	color: #FFFFFF;
+
+	top: 0px;
+	background: #0A3871;
+
+	order: 0;
+
+	border: none;
+}
+#decrypt {
+	color: #0A3871;
+
+	top: 91px;
+	background: transparent;
+	border: 1px solid #0A3871;
+	box-sizing: border-box;
+
+	order: 1;
+}
+.resultCamp, .resultCampAfter {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 32px;
+
+	position: absolute;
+	width: 275px;
+	height: auto;
+	left: 24px;
+	top: 707px;
+
+	background: #FFFFFF;
+	box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+	border-radius: 32px;
+}
+#sticker {
+	visibility: hidden;
+
+	position: absolute;
+	width: 336px;
+	height: 304px;
+	left: 55px;
+	top: 193px;
+}
+.textCard {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+
+	position: static;
+	width: 263px;
+	height: 122px;
+	left: 32px;
+	top: 32px;
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 32px 0px;
+}
+.title {
+
+	position: static;
+	width: 263px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+
+	color: #343A40;
+
+	flex: none;
+	order: 0;
+	align-self: stretch;
+	flex-grow: 0;
+}
+.text {
+
+	position: static;
+	width: 263px;
+	height: 48px;
+	left: 0px;
+	top: 74px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 24px */
+	text-align: center;
+
+	color: #495057;
+
+	flex: none;
+	order: 1;
+	align-self: stretch;
+	flex-grow: 0;
+	margin: 8px 0px;
+}
+#after{
+	display: none;
+}
+#copy {
+	display: none;
+
+	position: absolute;
+	width: 279px;
+	top: 145px;
+	left: 30px;
+
+	border: 1px solid #0A3871;
+	box-sizing: border-box;
+	border-radius: 24px;
+	background: #FFFFFF;
+
+	order: 1;
+	margin: 22px 0px;
+}
+#copy > span {
+	width: 231px;
+}
+.textAfter {
+	position: relative;
+
+	top: -40px;
+	left: -20px;
+
+	width: 310px;
+	height: 120px;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 150%;
+
+	resize: none;
+
+	background: transparent;
+	border: none;
+	outline: none;
+
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 150%;
+
+	color: #0A3871;
+}
+.textAfter::-webkit-scrollbar {
+	width: 10px;
+}
+.textAfter::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #c0ccfc; 
+	border-radius: 10px;
+}
+.textAfter::-webkit-scrollbar-thumb {
+	background: rgb(47, 121, 200); 
+	border-radius: 10px;
+}
+.textAfter::-webkit-scrollbar-thumb:hover {
+	background: #0A3871; 
+}
+
+/* Tablet */
+@media (min-width: 788px) {
+	body {
+		width: 768px;
+		height: 1174px;
+	}
+    #logo {
+		position: absolute;
+		width: 31.09px;
+		height: 50.58px;
+		left: 46px;
+		top: 74px;
+	}
+	h1 > img {
+		padding-left: 16px;
+	}
+	#textArea {
+		position: absolute;
+		width: 688px;
+		height: 580px;
+		left: 46px;
+		top: 240px;
+	}
+	.notice {
+		top: 836px;
+		left: 46px;
+	}
+	#buttonArea {
+		flex-direction: row;
+		width: 688px;
+		height: 67px;
+		left: 40px;
+		top: 870px;
+	}
+	button {
+		flex-grow: 1;
+		margin: 0px 12px;
+	}
+	button > span {
+		flex-grow: 1;
+		margin: 0px 8px;
+	}
+	.resultCamp{
+		width: 640px;
+		height: 133px;
+		left: 40px;
+		top: 1001px;
+	}
+	.resultCampAfter{
+		height: 300px;
+	}
+	#sticker {
+		visibility: hidden;
+	
+	}
+	.textCard {
+		width: 624px;
+		height: 69px;
+	}
+	.title {
+		width: 624px;
+		height: 29px;
+		margin: 8px 0px;
+	}
+	.text {
+		width: 624px;
+		height: 29px;
+		margin: 8px 0px;
+	}
+	.textAfter {
+		left: 15px;
+		width: 600px;
+		height: 230px;
+	}
+	#copy {
+		position: absolute;
+		top: 250px;
+		left: 40px;
+		width: 624px;
+	}
+}
+/* Desktop */
+@media (min-width: 1532px) {
+	body {
+		width: auto;
+		height: auto;
+	}
+	#logo {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+
+		width: 120px;
+		height: 48px;
+		left: 40px;
+		top: 40px;
+	}
+	h1 > img {
+		padding-left: 20px;
+	}
+	.conteiner {
+		position: absolute;
+		left: auto;
+		right: auto;
+	}
+	#textArea {
+		height: 380px;
+		left: 240px;
+		top: 158px;
+		
+	}
+	.notice {
+		left: 240px;
+		top: 551px;
+	}
+	#buttonArea {
+		flex-direction: row;
+		align-items: flex-start;
+
+		width: 680px;
+		height: 67px;
+		left: 240px;
+		top: 720px;
+	}
+	.resultCamp, .resultCampAfter{
+		width: 400px;
+		height: 725px;
+		left: 1000px;
+		top: 20px;
+	}
+	.textCard {
+		position: absolute;
+		width: 336px;
+		height: 122px;
+		left: 65px;
+		top: 500px;
+
+	}
+	#sticker{
+		visibility: visible;
+	}
+	.title {
+		width: 336px;
+		margin: 16px 0px;
+	}
+	.text {
+		width: 336px;
+		margin: 32px 0px;
+	}
+	#copy {	
+		position: absolute;
+		top: 140px;
+		width: 336px;
+
+		left: 2px;
+	}
+	.textAfter {
+		position: absolute;
+		top: -470px;
+		left: -30px;
+
+		width: 395px;
+		height: 600px;
+
+	}
+}
+@media (min-width: 2000px){
+	.conteiner {
+		position: absolute;
+		left: 10%;
+		top: 150px;
+	}
+	.notice > p {
+		font-size: 16px;
+		width: 303px;
+	}
+	.title {
+		width: 336px;
+		margin: 16px 0px;
+	}
+	.text {
+		margin: 32px 0px;
+	}
+}
